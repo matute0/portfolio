@@ -1,6 +1,8 @@
 import {useEffect ,useState } from "react";
 import ThemeSelector from "./ThemeSelector";
-import styles from "./ThemeModal.module.css"
+import styles from "./ThemeModal.module.css";
+import { motion } from "framer-motion";
+
 
 export default function ThemeModal({ mode, setMode }) {
   const [open, setOpen] = useState(false);
@@ -13,7 +15,11 @@ export default function ThemeModal({ mode, setMode }) {
 
   return (
     <>
-      <button className={styles.buttonModal} onClick={() => setOpen(true)}>
+      <motion.button className={styles.buttonModal} onClick={() => setOpen(true)}
+        initial={{ opacity: 0, y: -10 }}
+        animate={{ opacity: 1, y: 0 }}
+        transition={{ duration: 0.2 }}
+        whileHover={{ scale: 1.01 }}>
         {mode === "light" ? (
     <img src="sun-outline.svg" className={styles.eyeModal} />
 ) : mode === "dark" ? (
@@ -21,14 +27,18 @@ export default function ThemeModal({ mode, setMode }) {
 ) : (
     <img src="eye-outline.svg" className={styles.eyeModal} />
 )}
-      </button>
+      </motion.button>
 
       {open && (
-        <div className={styles.modalOverlay} onClick={() => setOpen(false)}>
+        <motion.div className={styles.modalOverlay} onClick={() => setOpen(false)}
+        initial={{ opacity: 0}}
+        animate={{ opacity: 1}}
+        exit={{opacity: 0}}
+        transition={{ duration: 0.2 }}>
           <div className={styles.modal} onClick={(e) => e.stopPropagation()}>
             <ThemeSelector mode={mode} setMode={setMode} />
           </div>
-        </div>
+        </motion.div>
       )}
     </>
   );

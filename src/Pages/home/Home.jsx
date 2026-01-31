@@ -1,6 +1,7 @@
 import { useState, useEffect } from "react";
 import styles from "./Home.module.css";
 import ThemeModal from "../components/ThemeModal.jsx";
+import { motion } from "framer-motion";
 
 export default function Home() {
   const [mode, setMode] = useState(() => {
@@ -47,7 +48,11 @@ export default function Home() {
     <>
       <ThemeModal mode={mode} setMode={setMode} />
       <div className={styles.div}>
-        <div className={styles.card}>
+        <motion.div className={styles.card}
+        initial={{ opacity: 0, y: -10 }}
+        animate={{ opacity: 1, y: 0 }}
+        transition={{ duration: 0.2 }}
+        whileHover={{ y: -5 }}>
         <img className={styles.profile} src="1769803415003-profile.jpg" />
         <h2 className={styles.name}>Matías Fernández</h2>
         <h2 className={styles.fullstack}>Full Stack Developer</h2>
@@ -55,7 +60,7 @@ export default function Home() {
             <button className={styles.contact}><a target="_blank" href="https://www.linkedin.com/in/matias-fernandez-escuder-86b5a136a/"><img src="145807.png"/></a></button>
             <button className={styles.contact}><a target="_blank" href="https://github.com/matute0"><img className={styles.github} src="github.svg" /></a></button>
           </div>
-        </div>
+        </motion.div>
         
       </div>
 

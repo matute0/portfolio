@@ -4,6 +4,7 @@
   --button: #1A1A1A;
   --border: white;
   --card: rgba(31, 31, 31, 0.95);
+  --text2: #c5c5c5;
 }
 [data-theme="light"]{
   --bg: #FAFAFA;
@@ -11,6 +12,6 @@
 body{
   background-color: var(--bg);
 }
-* {
+.with-transition body {
   transition: background-color 0.2s ease, color 0.2s ease;
 }

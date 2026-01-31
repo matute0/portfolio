@@ -10,7 +10,8 @@
     transition: 0.2s ease;
 }
 .card:hover{
-    transform: scale(1.01);
+    transform: translateY(-2px);
+    box-shadow: 0 8px 20px rgba(0,0,0,.25);
 }
 .div{
     display: flex;
@@ -29,6 +30,7 @@
 [data-theme="light"]{
   --text: #111111;
   --card: #F5F5F5;
+  --text2: #4b4b4b;
 }
 [data-theme="dark"] .github{
   filter: invert(1);
@@ -36,8 +38,8 @@
 .fullstack{
     margin-top: 0px;
     font-family: "Poppins", sans-serif;
-    color: var(--text);
-    font-size: 19px;
+    color: var(--text2);
+    font-size: 17px;
     font-weight: 50;
 }
 .name{
@@ -56,13 +58,17 @@
     justify-content: center;
     align-items: center;
     background: none;
-    
+    filter: drop-shadow(0 6px 10px rgba(0, 0, 0, 0.4));
 }
 .contact img{
+    transition: 0.2s ease;
     width: 35px;
     height: 35px;
     user-select: none;
     -webkit-user-drag: none;
+}
+.contact img:hover{
+    transform: scale(1.1);
 }
 .contacts{
     display: flex;
