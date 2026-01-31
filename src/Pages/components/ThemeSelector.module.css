@@ -5,6 +5,10 @@
 }
 [data-theme="light"]{
   --button: #e4e4e4;
+  --border: black;
+}
+[data-theme="dark"]{
+  --border: white;
 }
 [data-theme="dark"] .modesIcon {
   filter: invert(1);
@@ -17,11 +21,18 @@
   border: none;
   padding: 8px;
   border-radius: 8px;
+  border: 1px solid transparent;
   cursor: pointer;
+  transition: 0.2s ease;
+    user-select: none;
+  -webkit-user-drag: none;
 }
 
-.theme_switch button:active {
-  outline: 2px solid var(--accent);
+.theme_switch button.active {
+  border-color: var(--border);
+}
+.theme_switch button:hover{
+  border-color: var(--border);
 }
 .modesIcon{
     width: 20px;
