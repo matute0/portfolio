@@ -47,8 +47,16 @@ export default function Home() {
     <>
       <ThemeModal mode={mode} setMode={setMode} />
       <div className={styles.div}>
+        <div className={styles.card}>
         <img className={styles.profile} src="1769803415003-profile.jpg" />
+        <h2 className={styles.name}>Matías Fernández</h2>
         <h2 className={styles.fullstack}>Full Stack Developer</h2>
+          <div className={styles.contacts}>
+            <button className={styles.contact}><a target="_blank" href="https://www.linkedin.com/in/matias-fernandez-escuder-86b5a136a/"><img src="145807.png"/></a></button>
+            <button className={styles.contact}><a target="_blank" href="https://github.com/matute0"><img className={styles.github} src="github.svg" /></a></button>
+          </div>
+        </div>
+        
       </div>
 
     </>
