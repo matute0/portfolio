@@ -3,3 +3,10 @@
     height: 256px;
     border-radius: 100%;
 }
+[data-theme="light"]{
+  --text: #121212;
+}
+.fullstack{
+    font-family: 'Courier New', Courier, monospace;
+    color: var(--text);
+}

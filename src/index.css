@@ -1,5 +1,7 @@
 :root{
   --bg: #121212;
+  --text: white;
+  --button: #1A1A1A;
 }
 [data-theme="light"]{
   --bg: #FAFAFA;

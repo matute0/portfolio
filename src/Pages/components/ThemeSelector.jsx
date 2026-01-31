@@ -1,4 +1,5 @@
 import { useEffect, useState } from "react";
+import styles from "./ThemeSelector.module.css"
 
 export default function ThemeSelector() {
   const [mode, setMode] = useState(() => {
@@ -38,11 +39,33 @@ export default function ThemeSelector() {
   return () => media.removeEventListener("change", handler);
 }, [mode]);
 
-  return (
-    <select value={mode} onChange={(e) => setMode(e.target.value)}>
-      <option value="system">Predeterminado del navegador</option>
-      <option value="light">Modo claro</option>
-      <option value="dark">Modo oscuro</option>
-    </select>
+ return (
+    <div className={styles.theme_switch}>
+      <button
+        className={mode === "light" ? "active" : ""}
+        onClick={() => setMode("light")}
+        aria-label="Modo claro"
+      >
+        <img src="sun-outline.svg" className={styles.modesIcon}/>
+
+      </button>
+      <button
+        className={mode === "system" ? "active" : ""}
+        onClick={() => setMode("system")}
+        aria-label="Modo sistema"
+      >
+        <img src="monitor-outline.svg" className={styles.modesIcon}/>
+        
+      </button>
+
+      <button
+        className={mode === "dark" ? "active" : ""}
+        onClick={() => setMode("dark")}
+        aria-label="Modo oscuro"
+      >
+      <img src="moon-outline.svg" className={styles.modesIcon}/>
+
+      </button>
+    </div>
   );
 }

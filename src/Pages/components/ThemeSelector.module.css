@@ -1,0 +1,29 @@
+.theme_switch {
+  display: flex;
+  gap: 8px;
+
+}
+[data-theme="light"]{
+  --button: #e4e4e4;
+}
+[data-theme="dark"] .modesIcon {
+  filter: invert(1);
+}
+.theme_switch button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--button);
+  border: none;
+  padding: 8px;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.theme_switch button:active {
+  outline: 2px solid var(--accent);
+}
+.modesIcon{
+    width: 20px;
+    height: 20px;
+}
