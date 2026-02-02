@@ -4,9 +4,11 @@ import ThemeModal from "../components/themes/ThemeModal.jsx";
 import { motion } from "framer-motion";
 import { translations } from "@/i18n/translations.js";
 import { useLanguage } from "@/context/LanguageContext.jsx";
+import LanguageSelector from "../components/language/LanguageSelector.jsx";
+import SettingsButton from "../components/settings/SettingsButton.jsx";
 
 export default function Home() {
-  const { lang, setLang } = useLanguage();
+  const { lang} = useLanguage();
   const t = translations[lang];
 
   const [mode, setMode] = useState(() => {
@@ -51,10 +53,7 @@ export default function Home() {
 
   return (
     <>
-    <button onClick={() => setLang(lang === "es" ? "en" : "es")}>
-  {lang === "es" ? "ES" : "EN"}
-</button>
-      <ThemeModal mode={mode} setMode={setMode} />
+    <SettingsButton mode={mode} setMode={setMode}/>
       <div className={styles.div}>
         <motion.div className={styles.card}
         initial={{ opacity: 0, y: -10 }}
@@ -62,7 +61,7 @@ export default function Home() {
         transition={{ duration: 0.2 }}
         whileHover={{ y: -5 }}>
         <img className={styles.profile} src="1769803415003-profile.jpg" />
-        <h2 className={styles.name}>Matías Fernández</h2>
+        <h2 className={styles.name}>{t.name}</h2>
         <h2 className={styles.fullstack}>{t.role}</h2>
           <div className={styles.contacts}>
             <button className={styles.contact}><a target="_blank" href="https://www.linkedin.com/in/matias-fernandez-escuder-86b5a136a/"><img src="145807.png"/></a></button>

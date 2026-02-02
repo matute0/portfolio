@@ -1,0 +1,24 @@
+.button{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 45px;
+    height: 45px;
+    border: none;
+    border-radius: 100%;
+    background: none;
+    cursor: pointer;
+    user-select: none;
+    -webkit-user-drag: none;
+    position:absolute;
+    right: 10px;
+}
+.button img{
+    width: 45px;
+    height: 45px;
+    user-select: none;
+    -webkit-user-drag: none;
+}
+[data-theme="dark"] .button img {
+  filter: invert(1);
+}
