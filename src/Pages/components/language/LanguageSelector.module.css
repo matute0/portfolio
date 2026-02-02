@@ -1,0 +1,21 @@
+.button{
+    display: flex;
+    justify-content: center;
+    color: var(--text);
+    border: none;
+    background-color: var(--button);
+    border-radius: 8px;
+    width: 300px;
+    cursor: pointer;
+    border: 1px solid transparent;
+    transition: 0.2s ease;
+    filter: drop-shadow(0 0px 3px rgba(0, 0, 0, 0.4));
+
+}
+.button:hover{
+    border-color: var(--border);
+}
+.button p{
+    font-size: 14px;
+    font-family: "Work Sans", sans-serif;
+}

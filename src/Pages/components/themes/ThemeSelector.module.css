@@ -24,12 +24,15 @@
   border: 1px solid transparent;
   cursor: pointer;
   transition: 0.2s ease;
-    user-select: none;
+  user-select: none;
   -webkit-user-drag: none;
+  filter: drop-shadow(0 0px 3px rgba(0, 0, 0, 0.4));
+
 }
 
 .theme_switch button.active {
   border-color: var(--border);
+  transform: scale(1.1);
 }
 .theme_switch button:hover{
   border-color: var(--border);
