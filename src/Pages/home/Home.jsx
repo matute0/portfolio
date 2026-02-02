@@ -1,9 +1,14 @@
 import { useState, useEffect } from "react";
 import styles from "./Home.module.css";
-import ThemeModal from "../components/ThemeModal.jsx";
+import ThemeModal from "../components/themes/ThemeModal.jsx";
 import { motion } from "framer-motion";
+import { translations } from "@/i18n/translations.js";
+import { useLanguage } from "@/context/LanguageContext.jsx";
 
 export default function Home() {
+  const { lang, setLang } = useLanguage();
+  const t = translations[lang];
+
   const [mode, setMode] = useState(() => {
     return localStorage.getItem("theme-mode") || "system";
   });
@@ -46,6 +51,9 @@ export default function Home() {
 
   return (
     <>
+    <button onClick={() => setLang(lang === "es" ? "en" : "es")}>
+  {lang === "es" ? "ES" : "EN"}
+</button>
       <ThemeModal mode={mode} setMode={setMode} />
       <div className={styles.div}>
         <motion.div className={styles.card}
@@ -55,7 +63,7 @@ export default function Home() {
         whileHover={{ y: -5 }}>
         <img className={styles.profile} src="1769803415003-profile.jpg" />
         <h2 className={styles.name}>Matías Fernández</h2>
-        <h2 className={styles.fullstack}>Full Stack Developer</h2>
+        <h2 className={styles.fullstack}>{t.role}</h2>
           <div className={styles.contacts}>
             <button className={styles.contact}><a target="_blank" href="https://www.linkedin.com/in/matias-fernandez-escuder-86b5a136a/"><img src="145807.png"/></a></button>
             <button className={styles.contact}><a target="_blank" href="https://github.com/matute0"><img className={styles.github} src="github.svg" /></a></button>
