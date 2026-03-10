@@ -1,0 +1,19 @@
+.bar{
+    display: flex;
+    user-select: none;
+    -webkit-user-drag: none;
+    gap:30px;
+}
+[data-theme=dark] .bar p:hover{
+    filter: brightness(0.8);
+}
+.bar p{
+    height: 15px;
+    cursor: pointer;
+    color: var(--text);
+    font-family: 'Inter';
+    transition: 0.2s ease;
+}
+.bar p:hover{
+    transform: scale(1.04);
+}
