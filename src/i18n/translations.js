@@ -4,13 +4,23 @@ export const translations = {
         role: "Desarrollador Full Stack",
         settings: "Configuración",
         language: "Idioma",
-        langName: "Español"
+        langName: "Español",
+        aboutme: "Sobre mí",
+        projects: "Proyectos",
+        skills: "Tecnologías",
+        contactme: "Contáctame",
+        education: "Formación"
     },
     en: {
         name: "Matias Fernandez",
         role: "Full Stack Developer",
         settings: "Settings",
         language: "Language",
-        langName: "English"
+        langName: "English",
+        aboutme: "About me",
+        projects: "Projects",
+        skills: "Skills",
+        contactme: "Contact me",
+        education: "Education"
     }
 }

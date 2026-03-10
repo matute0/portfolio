@@ -6,6 +6,7 @@ import { translations } from "@/i18n/translations.js";
 import { useLanguage } from "@/context/LanguageContext.jsx";
 import LanguageSelector from "../components/language/LanguageSelector.jsx";
 import SettingsButton from "../components/settings/SettingsButton.jsx";
+import ExplorerBar from "../components/explorer-bar/ExplorerBar.jsx";
 
 export default function Home() {
   const { lang} = useLanguage();
@@ -68,9 +69,17 @@ export default function Home() {
             <button className={styles.contact}><a target="_blank" href="https://github.com/matute0"><img className={styles.github} src="github.svg" /></a></button>
           </div>
         </motion.div>
-        
       </div>
+      <div className={styles.explorer}>
+    <motion.div 
+      initial={{ opacity: 0, y: -10 }}
+        animate={{ opacity: 1, y: 0 }}
+        transition={{ duration: 0.2 }}>
+        <ExplorerBar/>
 
+      </motion.div>
+      </div>
+      
     </>
   );
 }
