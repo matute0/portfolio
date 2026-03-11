@@ -7,10 +7,13 @@ import { useLanguage } from "@/context/LanguageContext.jsx";
 import LanguageSelector from "../components/language/LanguageSelector.jsx";
 import SettingsButton from "../components/settings/SettingsButton.jsx";
 import ExplorerBar from "../components/explorer-bar/ExplorerBar.jsx";
+import AboutMe from "../aboutme/AboutMe.jsx"
+import Default from "../default/Default.jsx";
 
 export default function Home() {
   const { lang} = useLanguage();
   const t = translations[lang];
+  const [section, setSection] = useState("home");
 
   const [mode, setMode] = useState(() => {
     return localStorage.getItem("theme-mode") || "system";
@@ -69,16 +72,26 @@ export default function Home() {
             <button className={styles.contact}><a target="_blank" href="https://github.com/matute0"><img className={styles.github} src="github.svg" /></a></button>
           </div>
         </motion.div>
+        <div className={styles.div2}>
+          {section == "aboutme" && <>
+        <AboutMe/>
+        </>}
+        {section == "home" && <>
+        <Default/>
+        </>}
+        </div>
       </div>
+      
       <div className={styles.explorer}>
     <motion.div 
       initial={{ opacity: 0, y: -10 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.2 }}>
-        <ExplorerBar/>
-
+        <ExplorerBar section={section} setSection={setSection} />
+        
       </motion.div>
       </div>
+      
       
     </>
   );
