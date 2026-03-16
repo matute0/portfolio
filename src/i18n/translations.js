@@ -11,7 +11,7 @@ export const translations = {
         skills: "Tecnologías",
         contactme: "Contáctame",
         education: "Formación",
-        metext: "Soy estudiante de la Licenciatura en Tecnologías de la Información en la Universidad Tecnológica del Uruguay (UTEC). Me interesa especialmente el desarrollo de software y el aprendizaje de nuevas tecnologías relacionadas con la creación de aplicaciones. Actualmente me encuentro desarrollando proyectos personales para mejorar mis habilidades y prepararme para trabajar en la industria."
+        metext: "Estudiante de la Licenciatura en Tecnologías de la Información en la UTEC (Uruguay). Me apasiona el desarrollo de software y la exploración constante de nuevas tecnologías para crear aplicaciones eficientes. Enfocado en el aprendizaje continuo a través de proyectos personales, hoy busco mi primera experiencia en la industria. Estoy abierto a oportunidades remotas o presenciales dentro de Uruguay, con total disposición para aportar valor y seguir creciendo profesionalmente."
     },
     en: {
         welcome: "Welcome to my web portfolio.",
@@ -25,6 +25,6 @@ export const translations = {
         skills: "Skills",
         contactme: "Contact me",
         education: "Education",
-        metext: "I am a student of the Bachelor's Degree in Information Technology at the Technological University of Uruguay (UTEC). I am especially interested in software development and in learning new technologies related to building applications. Currently, I am developing personal projects to improve my skills and prepare myself to work in the software industry."
+        metext: "Information Technology student at UTEC (Uruguay). I am deeply interested in software development and staying ahead of the curve by learning modern frameworks and tools for application building. I am currently honing my skills through personal projects and am ready to transition into the tech industry. I am seeking remote opportunities or on-site roles within Uruguay, eager to collaborate and contribute to innovative development teams."
     }
 }
