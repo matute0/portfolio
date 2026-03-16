@@ -64,7 +64,7 @@ export default function Home() {
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.2 }}
         whileHover={{ y: -5 }}>
-        <img className={styles.profile} src="1769803415003-profile.jpg" />
+        <img className={styles.profile} src="1769803415003-profile.webp" />
         <h2 className={styles.name}>{t.name}</h2>
         <h2 className={styles.fullstack}>{t.role}</h2>
           <div className={styles.contacts}>
