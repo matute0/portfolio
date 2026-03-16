@@ -1,0 +1,28 @@
+.button{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: black;
+    border: none;
+    font-family: 'Inter';
+    border-radius: 8px;
+    height: 37px;
+    width: 180px;
+    background-color: #00C853;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.5);
+    width: 310px;
+    cursor: pointer;
+    transition: 0.2s ease;
+    gap: 5px;
+}
+.button:hover{
+    background-color: #00b84c;
+}
+.button img{
+    width:20px;
+    height: 20px;
+}
+.a{
+    text-decoration: none;
+    border-radius: 8px;
+}
