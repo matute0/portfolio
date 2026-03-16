@@ -17,7 +17,9 @@
     width: 100%;
     display: flex;
     position: absolute;
-    gap: 30px;
+    flex-direction: column;
+    width: 325px;
+    gap: 10px;
     top: 70px;
 }
 
@@ -92,5 +94,15 @@ position: fixed;
   transform: translateX(-50%);
 }
 .div2{
-
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    left: 350px;
+    top: 75px;
+}
+.download{
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }

@@ -9,6 +9,7 @@ import SettingsButton from "../components/settings/SettingsButton.jsx";
 import ExplorerBar from "../components/explorer-bar/ExplorerBar.jsx";
 import AboutMe from "../aboutme/AboutMe.jsx"
 import Default from "../default/Default.jsx";
+import DownloadCV from "../components/download/DownloadCV.jsx";
 
 export default function Home() {
   const { lang} = useLanguage();
@@ -72,7 +73,11 @@ export default function Home() {
             <button className={styles.contact}><a target="_blank" href="https://github.com/matute0"><img className={styles.github} src="github.svg" /></a></button>
           </div>
         </motion.div>
-        <div className={styles.div2}>
+        <div className={styles.download}>
+          <DownloadCV/>
+        </div>
+      </div>
+      <div className={styles.div2}>
           {section == "aboutme" && <>
         <AboutMe/>
         </>}
@@ -80,7 +85,6 @@ export default function Home() {
         <Default/>
         </>}
         </div>
-      </div>
       
       <div className={styles.explorer}>
     <motion.div 
