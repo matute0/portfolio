@@ -60,7 +60,10 @@ export default function Home() {
   return (
     <>
     <SettingsButton mode={mode} setMode={setMode}/>
-      <div className={styles.div}>
+      <motion.div className={styles.div}
+      initial={{ opacity: 0, y: -10 }}
+        animate={{ opacity: 1, y: 0 }}
+        transition={{ duration: 0.2 }}>
         <motion.div className={styles.card}
         initial={{ opacity: 0, y: -10 }}
         animate={{ opacity: 1, y: 0 }}
@@ -81,7 +84,7 @@ export default function Home() {
           <DownloadCV/>
         </div>
         
-      </div>
+      </motion.div>
       <div className={styles.div2}>
           {section == "aboutme" && <>
         <AboutMe/>
