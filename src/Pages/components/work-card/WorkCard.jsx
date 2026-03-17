@@ -9,7 +9,7 @@ export default function WorkCard(){
         <>
         <div className={styles.card}>
             <div className={styles.circle}>
-                
+
             </div>
             <h3>
                 {t.work}
