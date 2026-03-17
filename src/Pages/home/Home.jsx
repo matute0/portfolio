@@ -10,6 +10,7 @@ import ExplorerBar from "../components/explorer-bar/ExplorerBar.jsx";
 import AboutMe from "../aboutme/AboutMe.jsx"
 import Default from "../default/Default.jsx";
 import DownloadCV from "../components/download/DownloadCV.jsx";
+import WorkCard from "../components/work-card/WorkCard.jsx";
 
 export default function Home() {
   const { lang} = useLanguage();
@@ -73,9 +74,13 @@ export default function Home() {
             <button className={styles.contact}><a target="_blank" href="https://github.com/matute0"><img className={styles.github} src="github.svg" /></a></button>
           </div>
         </motion.div>
+        <div className={styles.work}>
+          <WorkCard/>
+        </div>
         <div className={styles.download}>
           <DownloadCV/>
         </div>
+        
       </div>
       <div className={styles.div2}>
           {section == "aboutme" && <>
