@@ -1,0 +1,43 @@
+.card{
+    background-color: var(--card);
+    height: 50px;
+    width: 310px;
+    border-radius: 20px;
+    font-family: 'Inter';
+    font-size: 12px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.5);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    color: var(--text);
+}
+.circle{
+    width: 10px;
+    height: 10px;
+    background-color: #00C853;
+    border-radius: 100%;
+      position: relative;
+}
+.circle::after{
+  content: "";
+  position: absolute;
+  inset: 0;
+  border-radius: 100%;
+  background: #00ff5e;
+     filter: blur(2px);
+  animation: pulse 1.5s infinite;
+}
+@keyframes pulse {
+  0% {
+    transform: scale(1);
+    opacity: 1;
+  }
+  70% {
+    transform: scale(2.5);
+    opacity: 0;
+  }
+  100% {
+    opacity: 0;
+  }
+}
