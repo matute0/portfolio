@@ -13,6 +13,8 @@
     cursor: pointer;
     transition: 0.2s ease;
     gap: 5px;
+        user-select: none;
+    -webkit-user-drag: none;
 }
 .button:hover{
     background-color: #00b84c;
