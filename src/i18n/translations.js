@@ -19,7 +19,7 @@ export const translations = {
         message: "Mensaje",
         send: "Enviar",
         sendme: "Envíame un mensaje",
-        contacttext: "¿Tenés un proyecto en mente o una propuesta laboral? Escribeme y te responderé lo antes posible."
+        contacttext: "¿Tienes un proyecto en mente o una propuesta laboral? Escribeme y te responderé lo antes posible."
     },
     en: {
         welcome: "Welcome to my web portfolio.",
