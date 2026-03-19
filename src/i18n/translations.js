@@ -19,7 +19,11 @@ export const translations = {
         message: "Mensaje",
         send: "Enviar",
         sendme: "Envíame un mensaje",
-        contacttext: "¿Tienes un proyecto en mente o una propuesta laboral? Escribeme y te responderé lo antes posible."
+        contacttext: "¿Tienes un proyecto en mente o una propuesta laboral? Escribeme y te responderé lo antes posible.",
+        required: "Este campo es obligatorio.",
+        success: "¡Mensaje enviado con éxito!",
+        error: "Hubo un error al enviar el mensaje.",
+        sending: "Enviando..."
     },
     en: {
         welcome: "Welcome to my web portfolio.",
@@ -41,6 +45,10 @@ export const translations = {
         message: "Message",
         send: "Send",
         sendme: "Send me a message",
-        contacttext: "Do you have a project in mind or a job opportunity? Send me a message and I'll get back to you as soon as possible."
+        contacttext: "Do you have a project in mind or a job opportunity? Send me a message and I'll get back to you as soon as possible.",
+        required: "This field is required.",
+        success: "Message sent successfully!",
+        error: "There was an error sending the message.",
+        sending: "Sending..."
     }
 }
