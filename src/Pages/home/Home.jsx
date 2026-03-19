@@ -11,6 +11,7 @@ import AboutMe from "../aboutme/AboutMe.jsx"
 import Default from "../default/Default.jsx";
 import DownloadCV from "../components/download/DownloadCV.jsx";
 import WorkCard from "../components/work-card/WorkCard.jsx";
+import ContactMe from "../contactme/ContactMe.jsx";
 
 export default function Home() {
   const { lang} = useLanguage();
@@ -91,6 +92,9 @@ export default function Home() {
         </>}
         {section == "home" && <>
         <Default/>
+        </>}
+        {section == "contactme" && <>
+        <ContactMe/>
         </>}
         </div>
       

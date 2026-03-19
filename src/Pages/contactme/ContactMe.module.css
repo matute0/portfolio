@@ -1,0 +1,82 @@
+.card{
+    background-color: var(--card);
+        justify-content: center;
+    align-items: top;
+    border-radius: 8px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.5);
+    width: 1500px;
+    height: 800px;
+        padding: 1px;
+}
+
+.card h1{
+        margin-left: 30px;
+    color: var(--text);
+    font-family: "Poppins", sans-serif;
+}
+.card h2{
+    color: var(--text);
+    font-family: "Poppins", sans-serif;
+}
+.form{
+    display:flex;
+    justify-content: center;
+    height: 500px;
+    gap: 20px;
+}
+.form form{
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+.form input{
+    width: 400px;
+    height: 30px;
+    font-size: 20px;
+    border: none;
+    border-radius: 8px;
+    font-family: 'Inter';
+    background-color: var(--bg);
+    color: var(--text);
+    box-shadow: 0 0px 10px rgba(0, 0, 0, 0.5);
+}
+.form textarea{
+    background-color: var(--bg);
+    color: var(--text);
+    border: none;
+    font-size: 20px;
+    font-family: 'Inter';
+    border-radius: 8px;
+    width: 400px;
+    box-shadow: 0 0px 10px rgba(0, 0, 0, 0.5);
+    height: 200px;
+      resize: none;
+}
+.form button{
+    background-color: #00C853;
+    border: none;
+    width: 250px;
+    height: 30px;
+    border-radius: 8px;
+    font-size: 15px;
+    font-family: 'Inter';
+    cursor: pointer;
+    box-shadow: 0 0px 10px rgba(0, 0, 0, 0.5);
+    transition: 0.2s ease;
+}
+.form button:hover{
+    background-color: #019940;
+}
+
+.text{
+    word-wrap: break-word;
+    font-size: 40px;
+}
+.right{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 800px;
+}

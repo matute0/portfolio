@@ -13,7 +13,13 @@ export const translations = {
         education: "Formación",
         metext: "Estudiante de la Licenciatura en Tecnologías de la Información en la UTEC (Uruguay). Me apasiona el desarrollo de software y la exploración constante de nuevas tecnologías para crear aplicaciones eficientes. Enfocado en el aprendizaje continuo a través de proyectos personales, hoy busco mi primera experiencia en la industria. Estoy abierto a oportunidades remotas o presenciales dentro de Uruguay, con total disposición para aportar valor y seguir creciendo profesionalmente.",
         download: "Descargar CV",
-        work: "Disponible | Presencial 🇺🇾 | Remoto 🌍"
+        work: "Disponible | Presencial 🇺🇾 | Remoto 🌍",
+        yourname: "Tu nombre",
+        youremail: "Tu correo",
+        message: "Mensaje",
+        send: "Enviar",
+        sendme: "Envíame un mensaje",
+        contacttext: "¿Tienes un proyecto en mente o una propuesta laboral? Escribeme y te responderé lo antes posible."
     },
     en: {
         welcome: "Welcome to my web portfolio.",
@@ -29,6 +35,12 @@ export const translations = {
         education: "Education",
         metext: "Information Technology student at UTEC (Uruguay). I am deeply interested in software development and staying ahead of the curve by learning modern frameworks and tools for application building. I am currently honing my skills through personal projects and am ready to transition into the tech industry. I am seeking remote opportunities or on-site roles within Uruguay, eager to collaborate and contribute to innovative development teams.",
         download: "Download CV",
-        work: "Open to work | On site 🇺🇾 | Remote 🌍"
+        work: "Open to work | On site 🇺🇾 | Remote 🌍",
+        yourname: "Your name",
+        youremail: "Your email",
+        message: "Message",
+        send: "Send",
+        sendme: "Send me a message",
+        contacttext: "Do you have a project in mind or a job opportunity? Send me a message and I'll get back to you as soon as possible."
     }
 }
