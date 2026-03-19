@@ -10,7 +10,7 @@
     cursor: pointer;
     user-select: none;
     -webkit-user-drag: none;
-    position:absolute;
+    position:fixed;
     right: 10px;
 }
 .button img{
