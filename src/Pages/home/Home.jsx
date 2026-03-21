@@ -12,6 +12,7 @@ import Default from "../default/Default.jsx";
 import DownloadCV from "../components/download/DownloadCV.jsx";
 import WorkCard from "../components/work-card/WorkCard.jsx";
 import ContactMe from "../contactme/ContactMe.jsx";
+import Education from "../education/Education.jsx";
 
 export default function Home() {
   const { lang} = useLanguage();
@@ -85,6 +86,7 @@ export default function Home() {
           <DownloadCV/>
         </div>
         
+        
       </motion.div>
       <div className={styles.div2}>
           {section == "aboutme" && <>
@@ -95,6 +97,9 @@ export default function Home() {
         </>}
         {section == "contactme" && <>
         <ContactMe/>
+        </>}
+        {section == "education" && <>
+        <Education/>
         </>}
         </div>
       

@@ -23,7 +23,9 @@ export const translations = {
         required: "Este campo es obligatorio.",
         success: "¡Mensaje enviado con éxito!",
         error: "Hubo un error al enviar el mensaje.",
-        sending: "Enviando..."
+        sending: "Enviando...",
+        utecbottom: "Licenciatura en Tecnologías de la Información",
+        inprogress: "En curso"
     },
     en: {
         welcome: "Welcome to my web portfolio.",
@@ -49,6 +51,8 @@ export const translations = {
         required: "This field is required.",
         success: "Message sent successfully!",
         error: "There was an error sending the message.",
-        sending: "Sending..."
+        sending: "Sending...",
+        utecbottom: "Bachelor’s Degree in Information Technology",
+        inprogress: "In progress"
     }
 }
