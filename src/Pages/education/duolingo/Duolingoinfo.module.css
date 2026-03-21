@@ -85,6 +85,7 @@
     color: var(--text);
     text-decoration: none;
     transition: 0.2s ease;
+    width: 220px;
 }
 .content a:hover{
     color: var(--texthover);

@@ -33,7 +33,19 @@ export const translations = {
         duolingodate: "24 de Febrero de 2026",
         downloadcertificate: "Descargar certificado",
         certificateid: "ID del certificado",
-        certificatevalidate: "Validar certificado"
+        certificatevalidate: "Validar certificado",
+        startdate: "Fecha de inicio: Marzo, 2024",
+        softwaredev: "Desarrollo de Software",
+        databaseman: "Gestión de Bases de Datos",
+        systemarch: "Arquitectura de Sistemas",
+        agilemeth: "Metodologías Ágiles",
+        softwaretest: "Pruebas de Software",
+        userexp: "Diseño de Interfaces (UI)",
+        keycom: "Competencias",
+        intermediate: "Título intermedio obtenido: Diciembre, 2025",
+        graduationexp: "Graduación estimada: Diciembre, 2027",
+        visitutec: "Sitio oficial de la carrera ↗",
+        downloadprogram: "Descargar plan de estudios"
     },
     en: {
         welcome: "Welcome to my web portfolio.",
@@ -69,6 +81,18 @@ export const translations = {
         duolingodate: "February 24, 2026",
         downloadcertificate: "Download certificate",
         certificateid: "Certificate ID",
-        certificatevalidate: "Verify certificate"
+        certificatevalidate: "Verify certificate",
+        startdate: "Start date: March, 2024",
+        softwaredev: "Software Development",
+        databaseman: "Database Management",
+        systemarch: "Systems Architecture",
+        agilemeth: "Agile Methodologies",
+        softwaretest: "Software Testing",
+        userexp: "User Experience (UX)",
+        keycom: "Key Competencies",
+        intermediate: "Intermediate Degree Obtained: December, 2025",
+        graduationexp: "Expected graduation: December, 2027",
+        visitutec: "Official Career Site ↗",
+        downloadprogram: "Download Study Plan"
     }
 }
