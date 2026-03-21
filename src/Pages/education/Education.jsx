@@ -1,9 +1,10 @@
 import { useState } from "react";
 import styles from "../education/Education.module.css";
 import { translations } from "@/i18n/translations.js";
-import { motion, AnimatePresence } from "framer-motion";
 import { useLanguage } from "@/context/LanguageContext.jsx";
 import UTECinfo from "./utec/UTECinfo";
+import Duolingoinfo from "./duolingo/Duolingoinfo"
+import { motion, AnimatePresence } from "framer-motion";
 
 export default function Education() {
   const { lang } = useLanguage();
@@ -27,9 +28,9 @@ export default function Education() {
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.2 }}
       >
-        <div className={styles.uteccard}>
+        <div className={`${styles.uteccard}`}>
         <div 
-          className={styles.utec} 
+          className={`${styles.utec}  ${isUtecOpen && styles.selected}`} 
           onClick={toggleUtecInfo} 
           style={{ cursor: "pointer" }}
         >
@@ -63,13 +64,18 @@ export default function Education() {
         </div>
         
         <div className={styles.duolingocard}>
-          <div className={styles.duolingo}
+          <div className={`${styles.duolingo} ${isDuolingoOpen && styles.selected}`}
         onClick={toggleDuolingoInfo}>
           <div className={styles.top}>
             <h1>Duolingo English Test</h1>
           </div>
           <div className={styles.bottom}>
             <h1>CEFR B1</h1>
+            <div className={styles.obtained}>
+            <h1>{t.obtained}</h1>
+            <img src="circle-check-filled.svg"></img>
+
+            </div>
           </div>
           
         </div>
@@ -83,7 +89,7 @@ export default function Education() {
               style={{ overflow: "hidden" }}
               className={styles.shadow}
             >
-              <UTECinfo />
+              <Duolingoinfo />
             </motion.div>
           )}
         </AnimatePresence>

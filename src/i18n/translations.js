@@ -25,7 +25,15 @@ export const translations = {
         error: "Hubo un error al enviar el mensaje.",
         sending: "Enviando...",
         utecbottom: "Licenciatura en Tecnologías de la Información",
-        inprogress: "En curso"
+        inprogress: "En curso",
+        universityeducation: "Educación universitaria",
+        certificate: "Certificado",
+        obtained: "Obtenido",
+        obtdate: "Fecha de emisión",
+        duolingodate: "24 de Febrero de 2026",
+        downloadcertificate: "Descargar certificado",
+        certificateid: "ID del certificado",
+        certificatevalidate: "Validar certificado"
     },
     en: {
         welcome: "Welcome to my web portfolio.",
@@ -53,6 +61,14 @@ export const translations = {
         error: "There was an error sending the message.",
         sending: "Sending...",
         utecbottom: "Bachelor’s Degree in Information Technology",
-        inprogress: "In progress"
+        inprogress: "In progress",
+        universityeducation: "University education",
+        certificate: "Certificate",
+        obtained: "Obtained",
+        obtdate: "Date of issue",
+        duolingodate: "February 24, 2026",
+        downloadcertificate: "Download certificate",
+        certificateid: "Certificate ID",
+        certificatevalidate: "Verify certificate"
     }
 }

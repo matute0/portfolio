@@ -3,4 +3,16 @@
     width: 750px;
     height: 600px;
     border-radius: 8px;
+    padding-top:10px;
+    gap:15px;
+}
+.card h1{
+    margin: 0;
+    font-family: 'Inter';
+    font-size: 22px;
+    text-align: center;
+}
+.card img{
+    width: 30px;
+    height: 30px;
 }

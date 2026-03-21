@@ -3,4 +3,89 @@
     width: 750px;
     height: 600px;
     border-radius: 8px;
+    padding-top:10px;
+}
+.card h1{
+    margin: 0;
+    font-family: 'Inter';
+    font-size: 22px;
+    text-align: center;
+}
+.content{
+    display: flex;
+    flex-direction: column;
+    width: 750px;
+    height: 600px;
+    text-align: left;
+    font-family: 'Work Sans';
+    font-weight: 500;
+    color: var(--text);
+    line-height: 1.6;
+    font-size: 22px;
+    padding-left: 10px;
+    gap: 15px;
+}
+.download{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 8px;
+    color:black;
+    background-color: #00C853;
+    width: 310px;
+    height: 50px;
+    font-size: 20px;
+    gap:7px;
+    font-weight: 100;
+    font-family: 'Inter';
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.5);
+    position:absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(75%);
+    margin-bottom: 10px;
+    transition: 0.2s ease;
+}
+.download:hover{
+    background-color: #009e42;
+
+}
+.download img{
+    width:23px;
+    height: 23px;
+}
+.a{
+    text-decoration: none;
+    border-radius: 8px;
+}
+.individual{
+    background-color: var(--bg);
+    width: 730px;
+    border-radius: 8px;
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 25px;
+    border: 1px solid rgb(77, 75, 75);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+}
+
+.score h1{
+    font-size: 30px;
+    font-family: 'Work Sans';
+}
+.score p{
+    margin: 0;
+    font-weight: 100;
+    line-height: 1.6;
+    font-family: 'Inter';
+}
+.content a{
+    color: var(--text);
+    text-decoration: none;
+    transition: 0.2s ease;
+}
+.content a:hover{
+    color: var(--texthover);
 }
