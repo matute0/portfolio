@@ -5,9 +5,13 @@
   --border: white;
   --card: rgba(31, 31, 31, 0.95);
   --text2: #c5c5c5;
+  --cardhover: rgba(43, 43, 43, 0.95);
+  --texthover: rgb(212, 212, 212);
 }
 [data-theme="light"]{
   --bg: #FAFAFA;
+  --cardhover: #e4e4e4;
+  --texthover: rgb(61, 61, 61);
 }
 body{
   background-color: var(--bg);
