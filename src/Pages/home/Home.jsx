@@ -4,7 +4,6 @@ import ThemeModal from "../components/themes/ThemeModal.jsx";
 import { motion } from "framer-motion";
 import { translations } from "@/i18n/translations.js";
 import { useLanguage } from "@/context/LanguageContext.jsx";
-import LanguageSelector from "../components/language/LanguageSelector.jsx";
 import SettingsButton from "../components/settings/SettingsButton.jsx";
 import ExplorerBar from "../components/explorer-bar/ExplorerBar.jsx";
 import AboutMe from "../aboutme/AboutMe.jsx"
@@ -13,6 +12,7 @@ import DownloadCV from "../components/download/DownloadCV.jsx";
 import WorkCard from "../components/work-card/WorkCard.jsx";
 import ContactMe from "../contactme/ContactMe.jsx";
 import Education from "../education/Education.jsx";
+import Skills from "../skills/Skills.jsx";
 
 export default function Home() {
   const { lang} = useLanguage();
@@ -100,6 +100,9 @@ export default function Home() {
         </>}
         {section == "education" && <>
         <Education/>
+        </>}
+        {section == "skills" && <>
+        <Skills/>
         </>}
         </div>
       
