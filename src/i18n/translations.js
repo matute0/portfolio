@@ -45,7 +45,11 @@ export const translations = {
         intermediate: "Título intermedio obtenido: Diciembre, 2025",
         graduationexp: "Graduación estimada: Diciembre, 2027",
         visitutec: "Sitio oficial de la carrera ↗",
-        downloadprogram: "Descargar plan de estudios"
+        downloadprogram: "Descargar plan de estudios",
+        langframew: "Lenguajes & Frameworks",
+        softwaretesting: "Pruebas de Software",
+        bd: "Gestión de Datos",
+        deploy: "Despliegue & Herramientas",
     },
     en: {
         welcome: "Welcome to my web portfolio.",
@@ -93,6 +97,10 @@ export const translations = {
         intermediate: "Intermediate Degree Obtained: December, 2025",
         graduationexp: "Expected graduation: December, 2027",
         visitutec: "Official Career Site ↗",
-        downloadprogram: "Download Study Plan"
+        downloadprogram: "Download Study Plan",
+        langframew: "Languages & Frameworks",
+        softwaretesting: "Software Testing",
+        bd: "Data Management",
+        deploy: "Deployment & Tools",
     }
 }

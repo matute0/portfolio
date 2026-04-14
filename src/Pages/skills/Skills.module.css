@@ -1,0 +1,84 @@
+.container{
+    display: flex;
+    flex-direction: row;
+    gap: 40px;
+    width: 1300px;
+    justify-content: center;
+
+}
+.lang,.testing,.bd,.deploy{
+    background-color: var(--card);
+    width: 200px;
+    height: 800px;
+    border-radius: 8px;
+    padding: 10px;
+    transition: 0.2s ease;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.5);
+}
+.container img{
+    width: 80px;
+    height: 80px;
+    filter: drop-shadow(0 6px 10px rgba(0, 0, 0, 0.2));
+}
+[data-theme=dark] .container img{
+    filter:invert();
+}
+.lang,.testing,.bd,.deploy:hover{
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.25);
+
+}
+.container h2{
+    text-align: center;
+    color: var(--text);
+    font-family: 'Inter';
+    height: 50px;
+}
+.skill{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+}
+.skill p{
+    color:var(--text);
+    font-family: 'Work Sans';
+    font-size: 22px;
+    margin: 0;
+}
+.content{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    overflow-y: scroll;
+    height: 700px;
+
+
+    mask-image: linear-gradient(
+    to bottom,
+        transparent 0%,
+        rgb(0, 0, 0) 5%
+  );
+  
+  -webkit-mask-image: linear-gradient(
+    to bottom,
+        transparent 0%,
+        black 5%
+  );
+}
+.content::-webkit-scrollbar{
+    width: 5px;
+}
+.content::-webkit-scrollbar-track{
+background: rgba(99, 99, 99, 0.5);
+  border-radius: 10px;
+}
+.content::-webkit-scrollbar-thumb{
+    background: #727272;
+  border-radius: 10px;
+  transition: background 0.3s ease;
+}
+[data-theme=dark] .testlink{
+    filter:invert(+1);
+}
+.cisco{
+    font-size: 15px;
+}
