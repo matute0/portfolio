@@ -1,9 +1,7 @@
 .card{
-    background-color: var(--card);
         justify-content: center;
     align-items: top;
     border-radius: 8px;
-    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.5);
     width: 1500px;
     height: 800px;
         padding: 1px;
@@ -32,28 +30,54 @@
     gap: 10px;
 }
 .form input{
-    width: 400px;
-    height: 30px;
-    font-size: 20px;
-    border: none;
-    border-radius: 8px;
-    font-family: 'Inter';
-    background-color: var(--bg);
-    color: var(--text);
-    box-shadow: 0 0px 10px rgba(0, 0, 0, 0.5);
+    width: 370px;
+  background-color: var(--input);
+  border: 1px solid var(--borderInput); 
+  border-radius: 8px; 
+  padding: 12px 16px;
+  font-size: 15px;
+  color: var(--text);
+  outline: none;
+  transition: all 0.3s ease;
+}
+.form input:focus{
+    border-color: #10b981;
+  box-shadow: 0 0 0 1px #10b981;
+  background-color: rgba(255, 255, 255, 0.08);
 }
 .form textarea{
-    background-color: var(--bg);
+    background-color: var(--input);
+    border: 1px solid var(--borderInput); 
     color: var(--text);
-    border: none;
-    font-size: 20px;
-    font-family: 'Inter';
     border-radius: 8px;
-    width: 400px;
-    box-shadow: 0 0px 10px rgba(0, 0, 0, 0.5);
+    padding: 12px;
+    padding-left: 16px;
+    width: 378px;
     height: 200px;
-      resize: none;
+    resize: none;
+    outline: none;
+    transition: all 0.3s ease;
+  font-size: 15px;
 }
+.form textarea::-webkit-scrollbar{
+    width: 5px;
+}
+.form textarea::-webkit-scrollbar-track{
+background: rgba(99, 99, 99, 0.5);
+  border-radius: 10px;
+}
+.form textarea::-webkit-scrollbar-thumb{
+    background: #727272;
+  border-radius: 10px;
+  transition: background 0.3s ease;
+}
+.form textarea:focus{
+        border-color: #10b981;
+  box-shadow: 0 0 0 1px #10b981;
+  background-color: rgba(255, 255, 255, 0.08);
+}
+
+
 .form button{
     background-color: #00C853;
     border: none;
