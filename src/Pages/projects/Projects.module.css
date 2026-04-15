@@ -1,0 +1,8 @@
+.div{
+width: 1250px;
+}
+.div h1{
+    text-align: center;
+    color: var(--text);
+    font-family: 'Inter';
+}
