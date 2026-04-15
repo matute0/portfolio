@@ -1,16 +1,43 @@
-# React + Vite
+# 🚀 Personal Web Portfolio | Matías Fernández
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+<img width="1913" height="912" alt="image" src="https://github.com/user-attachments/assets/e2871dcc-c653-4154-adf6-82af8f22f489" />
 
-Currently, two official plugins are available:
+An interactive and minimalist web portfolio designed to showcase my projects, skills, and experience as a Full Stack Developer. Built with a strong focus on user experience (UX), fluid animations, and a premium design.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+[**View Live Portfolio**](https://tu-dominio.com)
 
-## React Compiler
+## ✨ Key Features
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+- 🌗 **Dark / Light Mode:** Immersive experience with particle backgrounds that adapt to the system theme, ensuring optimal contrast and readability.
+- 🌐 **Multi-language Support (i18n):** Custom implementation using Context API to seamlessly switch between English and Spanish without reloading the page.
+- ✨ **Premium Animations:** Page transitions, stagger text effects, and fluid movements powered by Framer Motion.
+- 📧 **Direct Contact:** Integrated contact form with a modern design featuring translucent inputs for a native dark mode experience.
 
-## Expanding the ESLint configuration
+---
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## 🛠️ Technologies & Tools
+
+- **Frontend:** React.js, HTML5, CSS (CSS Modules)
+- **Animations:** Framer Motion
+- **Global State:** React Context API (for language and theme management)
+- **Deployment:** [Vercel]
+
+## 📂 Project Structure
+
+A quick overview of the main project architecture:
+
+```text
+src/
+├── context/        # Global state management (e.g., LanguageContext)
+├── i18n/           # Translation dictionaries (translations.js)
+├── Pages/          # Main views and UI components
+│   ├── components/ # Reusable UI elements (nav, particles, buttons)
+│   ├── aboutme/    # "About Me" section
+│   ├── contactme/  # Contact form
+│   ├── default/    # Main animated text
+│   ├── education/  # Education and background
+│   ├── home/       # Main container wrapper
+│   ├── projects/   # Projects gallery
+│   └── skills/     # Tech stack and tools
+├── App.jsx         # Root component and layout
+└── main.jsx        # React entry point (Vite)
