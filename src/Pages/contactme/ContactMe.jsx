@@ -62,8 +62,9 @@ export default function ContactMe() {
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.2 }}>
                 
-                <h1>{t.contactme}</h1>
-                
+                <br/>
+                <br/>
+
                 <div className={styles.form}>
                     <form ref={form} onSubmit={sendEmail} noValidate>
                         <h2>{t.sendme}</h2>
