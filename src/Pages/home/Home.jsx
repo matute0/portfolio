@@ -18,7 +18,10 @@ import ParticlesBackground from "../components/particlesbackground/ParticlesBack
 export default function Home() {
   const { lang} = useLanguage();
   const t = translations[lang];
-  const [section, setSection] = useState("home");
+  const [section, setSection] = useState(() => {
+  const hash = typeof window !== "undefined" ? window.location.hash.replace("#", "") : "";
+  return hash || "home";
+});
 
   const [mode, setMode] = useState(() => {
     return localStorage.getItem("theme-mode") || "system";
@@ -42,6 +45,21 @@ export default function Home() {
     applyTheme(mode);
     localStorage.setItem("theme-mode", mode);
   }, [mode]);
+  useEffect(() => {
+  window.location.hash = section;
+}, [section]);
+
+useEffect(() => {
+  const handleHashChange = () => {
+    const currentHash = window.location.hash.replace("#", "");
+    if (currentHash) {
+      setSection(currentHash);
+    }
+  };
+
+  window.addEventListener("hashchange", handleHashChange);
+  return () => window.removeEventListener("hashchange", handleHashChange);
+}, []);
 
   useEffect(() => {
     if (mode !== "system") return;
