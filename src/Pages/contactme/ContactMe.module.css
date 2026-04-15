@@ -1,0 +1,158 @@
+.card{
+        justify-content: center;
+    align-items: top;
+    border-radius: 8px;
+    width: 1500px;
+    height: 800px;
+        padding: 1px;
+}
+
+.card h1{
+        margin-left: 30px;
+    color: var(--text);
+    font-family: "Poppins", sans-serif;
+}
+.card h2{
+    color: var(--text);
+    font-family: "Poppins", sans-serif;
+}
+.form{
+    display:flex;
+    justify-content: center;
+    height: 500px;
+    gap: 20px;
+}
+.form form{
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+.form input{
+    width: 370px;
+  background-color: var(--input);
+  border: 1px solid var(--borderInput); 
+  border-radius: 8px; 
+  padding: 12px 16px;
+  font-size: 15px;
+  color: var(--text);
+  outline: none;
+  transition: all 0.3s ease;
+}
+.form input:focus{
+    border-color: #10b981;
+  box-shadow: 0 0 0 1px #10b981;
+  background-color: rgba(255, 255, 255, 0.08);
+}
+.form textarea{
+    background-color: var(--input);
+    border: 1px solid var(--borderInput); 
+    color: var(--text);
+    border-radius: 8px;
+    padding: 12px;
+    padding-left: 16px;
+    width: 378px;
+    height: 200px;
+    resize: none;
+    outline: none;
+    transition: all 0.3s ease;
+  font-size: 15px;
+}
+.form textarea::-webkit-scrollbar{
+    width: 5px;
+}
+.form textarea::-webkit-scrollbar-track{
+background: rgba(99, 99, 99, 0.5);
+  border-radius: 10px;
+}
+.form textarea::-webkit-scrollbar-thumb{
+    background: #727272;
+  border-radius: 10px;
+  transition: background 0.3s ease;
+}
+.form textarea:focus{
+        border-color: #10b981;
+  box-shadow: 0 0 0 1px #10b981;
+  background-color: rgba(255, 255, 255, 0.08);
+}
+
+
+.form button{
+    background-color: #00C853;
+    border: none;
+    width: 250px;
+    height: 30px;
+    border-radius: 8px;
+    font-size: 15px;
+    font-family: 'Inter';
+    cursor: pointer;
+    box-shadow: 0 0px 10px rgba(0, 0, 0, 0.5);
+    transition: 0.2s ease;
+}
+.form button:hover{
+    background-color: #019940;
+}
+
+.text{
+    word-wrap: break-word;
+    font-size: 40px;
+}
+.right{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 800px;
+}
+.inputgroup {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 5px;
+    width: 400px;
+}
+.error {
+    color: #ff6b6b;
+    font-size: 0.85rem;
+    margin-left: 5px;
+    transition: 0.2s ease;
+    font-family: 'Inter', sans-serif;
+}
+.form .inputerr {
+    transition: 0.2s ease;
+    border: 2px solid #ff6b6b !important;
+}
+.hidden {
+    transition: 0.2s ease;
+    display: none;
+}
+.statusmsg {
+    margin-top: 5px;
+    padding: 10px;
+    border-radius: 8px;
+    text-align: center;
+    font-weight: bold;
+    font-family: 'Inter', sans-serif;
+    width: 400px;
+    box-sizing: border-box;
+    transition: 0.2s ease;
+}
+.success {
+    background-color: rgba(46, 204, 113, 0.2);
+    color: #2ecc71; 
+    border: 1px solid #2ecc71;
+    transition: 0.2s ease;
+}
+.errormsg {
+    background-color: rgba(255, 107, 107, 0.2);
+    color: #ff6b6b; 
+    border: 1px solid #ff6b6b;
+    transition: 0.2s ease;
+}
+.form button:disabled {
+    background-color: #444;
+    color: #888;
+    cursor: not-allowed;
+    box-shadow: none;
+    transition: 0.2s ease;
+}

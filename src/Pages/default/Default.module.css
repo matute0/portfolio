@@ -1,0 +1,8 @@
+.h1{
+    font-family: 'Inter';
+    font-weight: 700;
+    font-size: 85px;
+    color: var(--text);
+    text-align: center;
+    width: 1400px;
+}

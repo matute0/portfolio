@@ -1,0 +1,24 @@
+.bar{
+    display: flex;
+    user-select: none;
+    -webkit-user-drag: none;
+    gap:30px;
+}
+
+.bar p{
+    height: 19px;
+    cursor: pointer;
+    color: var(--text);
+    font-family: 'Inter';
+    transition: 0.2s ease;
+    border-bottom: solid transparent 1px;
+}
+.bar p:hover{
+    transform: scale(1.03);
+    border-color: var(--text);
+}
+.active{
+    transition: 0.2s ease;
+    height: 35px;
+    border-bottom: solid var(--text) 2px;
+}

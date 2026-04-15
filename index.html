@@ -1,10 +1,31 @@
 <!doctype html>
 <html lang="en">
   <head>
+<link href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@400;500;600;700&family=Inter:wght@400;500;600&family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
     <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <script>
+      (function () {
+        const saved = localStorage.getItem("theme-mode") || "system";
+        let theme;
+
+        if (saved === "dark") theme = "dark";
+        else if (saved === "light") theme = "light";
+        else {
+          theme = window.matchMedia("(prefers-color-scheme: dark)").matches
+            ? "dark"
+            : "light";
+        }
+
+        document.documentElement.setAttribute("data-theme", theme);
+      })();
+      window.addEventListener("load", () => {
+        document.documentElement.classList.add("with-transition");
+      });
+    </script>
+    <link rel="icon" href="/favicon-dark.svg" media="(prefers-color-scheme: dark)">
+    <link rel="icon" href="/favicon-light.svg" media="(prefers-color-scheme: light)">
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>portfolio</title>
+    <title>Matias Fernandez</title>
   </head>
   <body>
     <div id="root"></div>
