@@ -4,8 +4,6 @@
 
 An interactive and minimalist web portfolio designed to showcase my projects, skills, and experience as a Full Stack Developer. Built with a strong focus on user experience (UX), fluid animations, and a premium design.
 
-[**View Live Portfolio**](https://matute0.versel.app)
-
 ## ✨ Key Features
 
 - 🌗 **Dark / Light Mode:** Immersive experience with particle backgrounds that adapt to the system theme, ensuring optimal contrast and readability.
