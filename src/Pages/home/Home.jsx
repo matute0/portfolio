@@ -14,6 +14,7 @@ import ContactMe from "../contactme/ContactMe.jsx";
 import Education from "../education/Education.jsx";
 import Skills from "../skills/Skills.jsx";
 import ParticlesBackground from "../components/particlesbackground/ParticlesBackground.jsx";
+import Projects from "../projects/Projects.jsx";
 
 export default function Home() {
   const { lang} = useLanguage();
@@ -124,7 +125,10 @@ useEffect(() => {
         {section == "skills" && <>
         <Skills/>
         </>}
-        </div>
+        {section == "projects" && <>
+        <Projects/>
+        </>}
+      </div>
       
       <div className={styles.explorer}>
     <motion.div 

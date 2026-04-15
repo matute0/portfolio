@@ -54,6 +54,7 @@ export const translations = {
         softwaretesting: "Pruebas de Software",
         bd: "Gestión de Datos",
         deploy: "Despliegue & Herramientas",
+        comingsoon: "Próximamente..."
     },
     en: {
         welcome: [
@@ -110,5 +111,6 @@ export const translations = {
         softwaretesting: "Software Testing",
         bd: "Data Management",
         deploy: "Deployment & Tools",
+        comingsoon: "Coming soon...",
     }
 }
