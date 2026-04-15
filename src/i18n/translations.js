@@ -1,6 +1,10 @@
 export const translations = {
     es: {
-        welcome: "Bienvenido a mi portfolio web.",
+       welcome: [
+      "Diseño el frontend.",
+      "Estructuro el backend.",
+      "Despliego la solución."
+    ],
         name: "Matías Fernández",
         role: "Desarrollador Full Stack",
         settings: "Configuración",
@@ -52,7 +56,11 @@ export const translations = {
         deploy: "Despliegue & Herramientas",
     },
     en: {
-        welcome: "Welcome to my web portfolio.",
+        welcome: [
+      "Design the frontend.",
+      "Architect the backend.",
+      "Deploy the solution."
+    ],
         name: "Matias Fernandez",
         role: "Full Stack Developer",
         settings: "Settings",

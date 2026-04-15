@@ -13,6 +13,7 @@ import WorkCard from "../components/work-card/WorkCard.jsx";
 import ContactMe from "../contactme/ContactMe.jsx";
 import Education from "../education/Education.jsx";
 import Skills from "../skills/Skills.jsx";
+import ParticlesBackground from "../components/particlesbackground/ParticlesBackground.jsx";
 
 export default function Home() {
   const { lang} = useLanguage();
@@ -61,6 +62,7 @@ export default function Home() {
 
   return (
     <>
+    <ParticlesBackground />
     <SettingsButton mode={mode} setMode={setMode}/>
       <motion.div className={styles.div}
       initial={{ opacity: 0, y: -10 }}

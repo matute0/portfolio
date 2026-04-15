@@ -13,8 +13,20 @@
   --cardhover: #e4e4e4;
   --texthover: rgb(61, 61, 61);
 }
-body{
-  background-color: var(--bg);
+@keyframes auroraMovement {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+[data-theme="light"] body{
+  background: linear-gradient(270deg, #ffffff, #d5e6fd, #ffffff, #daf8e3);
+  background-size: 400% 400%;
+  animation: auroraMovement 30s ease infinite;
+}
+body {
+  background: linear-gradient(270deg, #0d0d0d, #05162a, #0d0d0d, #032015);
+  background-size: 400% 400%;
+  animation: auroraMovement 30s ease infinite;
 }
 .with-transition body {
   transition: background-color 0.2s ease, color 0.2s ease;
