@@ -1,7 +1,7 @@
 .card{
     background-color: var(--card);
     height: 6.25vh;
-    width: 17.2vw;
+    width: 16.5vw;
     border-radius: 5vh;
     font-family: 'Inter';
     box-shadow: 0 8px 20px rgba(0, 0, 0, 0.5);

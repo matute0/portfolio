@@ -17,7 +17,7 @@
     display: flex;
     position: absolute;
     flex-direction: column;
-    width: 18vw;
+    width: 17vw;
     gap: 0.625rem;
     top: 4.375rem;
 }
