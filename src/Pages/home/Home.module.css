@@ -1,9 +1,9 @@
 .card{
-    margin: 8px;
-    padding: 16px;
+    margin: 0.5rem;
+    padding: 1rem;
     display: flex;
     flex-direction: column;
-    border-radius: 8px;
+    border-radius: 0.5rem;
     align-items: center;
     background-color: var(--card);
     box-shadow: 0 8px 20px rgba(0, 0, 0, 0.5);
@@ -14,18 +14,16 @@
     box-shadow: 0 8px 20px rgba(0,0,0,.25);
 }
 .div{
-    width: 100%;
     display: flex;
     position: absolute;
     flex-direction: column;
-    width: 325px;
-    gap: 10px;
-    top: 70px;
+    width: 18vw;
+    gap: 0.625rem;
+    top: 4.375rem;
 }
 
 .profile{
-    width: 256px;
-    height: 256px;
+    width: 78.76%;
     border-radius: 100%;
     filter: drop-shadow(0 6px 10px rgba(0, 0, 0, 0.4));
     transition: 0.2s ease;
@@ -44,18 +42,18 @@
     margin-top: 0px;
     font-family: "Poppins", sans-serif;
     color: var(--text2);
-    font-size: 17px;
-    font-weight: 50;
+    font-size: 1rem;
+    font-weight: 300;
 }
 .name{
-    margin-bottom: 5px;
-    margin-top: 15px;
+    margin-bottom: 0.325rem;
+    margin-top: 0.9375rem;
     font-family: "Poppins", sans-serif;
     color: var(--text);
+    font-size: 1.5rem;
 }
 .contact{
-    width: 35px;
-    height: 35px;
+    width: 1.82vw;
     border: none;
     border-radius: 100%;
     cursor: pointer;
@@ -67,8 +65,7 @@
 }
 .contact img{
     transition: 0.2s ease;
-    width: 35px;
-    height: 35px;
+    width: 1.82vw;
     user-select: none;
     -webkit-user-drag: none;
 }
@@ -80,12 +77,10 @@
     gap: 15px;
 }
 .contact .github{
-    width: 40px;
-    height: 40px;
+    width: 2.08vw;
 }
 .github{
-    width: 40px;
-    height: 40px;
+    width: 2.08vw;
 }
 .explorer{
 position: fixed;
@@ -110,4 +105,20 @@ position: fixed;
         display: flex;
     justify-content: center;
     align-items: center;
+}
+@media (max-width: 1366px){
+    .name{
+        font-size: 1.12rem;
+    }
+    .fullstack{
+        font-size: 0.8rem;
+    }
+}
+@media (max-width: 768px){
+    .name{
+        font-size: 0.93rem;
+    }
+    .fullstack{
+        font-size: 0.66rem;
+    }
 }
