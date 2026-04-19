@@ -93,6 +93,7 @@ position: fixed;
     justify-content: center;
     align-items: center;
     position: absolute;
+    width: 70%;
     left: 350px;
     top: 75px;
 }
@@ -108,10 +109,22 @@ position: fixed;
 }
 @media (max-width: 1536px){
     .name{
-        font-size: 1.12rem;
+        font-size: 1.875rem;
     }
     .fullstack{
-        font-size: 0.8rem;
+        font-size: 1rem;
+    }
+    .div{
+        width: 21.25vw;
+    }
+    .contact .github{
+        width: 3vw;
+    }
+    .contact img{
+        width: 2.6vw;
+    }
+    .contacts{
+        gap: 2rem;
     }
 }
 @media (max-width: 1280px){

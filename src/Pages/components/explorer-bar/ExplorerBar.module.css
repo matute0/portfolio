@@ -26,7 +26,13 @@
 
 @media (max-width: 1536px){
     .bar p{
-        font-size: 0.8rem;
+        font-size: 1.125rem;
+        height: 3.3vh;
+        border-bottom: solid transparent 2px;
+    }
+    .active{
+        height: 6vh;
+        border-bottom: solid var(--text) 3px;
     }
 }
 @media (max-width: 1280px){
