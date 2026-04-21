@@ -7,12 +7,11 @@
     background-color: var(--card);
     justify-content: center;
     align-items: top;
-    width: 800px;
+    width: 41.67vw;
     border-radius: 8px;
     box-shadow: 0 8px 20px rgba(0, 0, 0, 0.5);
-    height: 434px;
+    height: 40vh;
     padding: 1px;
-    margin-left: 225px;
 }
 .aboutdiv p{
     margin-left: 30px;
@@ -22,6 +21,19 @@
     word-wrap: break-word;
     font-family: "Work Sans";
     font-weight: 400;
-    font-size: 21px;
+    font-size: 1.3125rem;
     line-height: 1.6;
+}
+
+@media (max-width: 1536px){
+    .aboutdiv{
+        width: 80vw;
+        height: 70vh;
+    }
+    .aboutdiv p{
+        font-size: 1.64rem;
+    }
+    .aboutdiv h1{
+        font-size: 2.5rem;
+    }
 }

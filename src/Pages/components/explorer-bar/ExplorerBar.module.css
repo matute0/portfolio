@@ -2,16 +2,17 @@
     display: flex;
     user-select: none;
     -webkit-user-drag: none;
-    gap:30px;
+    gap:1.875rem;
 }
 
 .bar p{
-    height: 19px;
+    height: 2.1vh;
     cursor: pointer;
     color: var(--text);
     font-family: 'Inter';
     transition: 0.2s ease;
     border-bottom: solid transparent 1px;
+    font-size: 1rem;
 }
 .bar p:hover{
     transform: scale(1.03);
@@ -19,6 +20,23 @@
 }
 .active{
     transition: 0.2s ease;
-    height: 35px;
+    height: 3.8vh;
     border-bottom: solid var(--text) 2px;
+}
+
+@media (max-width: 1536px){
+    .bar p{
+        font-size: 1.125rem;
+        height: 3.3vh;
+        border-bottom: solid transparent 2px;
+    }
+    .active{
+        height: 6vh;
+        border-bottom: solid var(--text) 3px;
+    }
+}
+@media (max-width: 1280px){
+    .bar p{
+        font-size: 0.66rem;
+    }
 }

@@ -2,8 +2,8 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 45px;
-    height: 45px;
+    width: 3.5vw;
+    aspect-ratio: 1 / 1;
     border: none;
     border-radius: 100%;
     background: none;
@@ -14,11 +14,20 @@
     right: 10px;
 }
 .button img{
-    width: 45px;
-    height: 45px;
+    width: 3.5vw;
+    aspect-ratio: 1 / 1;
     user-select: none;
     -webkit-user-drag: none;
 }
 [data-theme="dark"] .button img {
   filter: invert(1);
+}
+
+@media (max-width: 1536px){
+    .button{
+        width: 4vw;
+    }
+    .button img{
+        width: 4vw;
+    }
 }
