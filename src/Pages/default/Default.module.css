@@ -1,8 +1,13 @@
 .h1{
     font-family: 'Inter';
     font-weight: 700;
-    font-size: 85px;
+    font-size: 5.31rem;
     color: var(--text);
     text-align: center;
-    width: 1400px;
+    width: 100%;
+}
+@media (max-width: 1536px){
+    .h1{
+        font-size: 6rem;
+    }
 }

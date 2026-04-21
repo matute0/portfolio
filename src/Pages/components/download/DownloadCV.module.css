@@ -6,24 +6,39 @@
     border: none;
     font-family: 'Inter';
     border-radius: 8px;
-    height: 37px;
+    height: 4.5vh;
     background-color: #00C853;
     box-shadow: 0 8px 20px rgba(0, 0, 0, 0.5);
-    width: 310px;
+    width: 16.5vw;
     cursor: pointer;
     transition: 0.2s ease;
-    gap: 5px;
+    gap: 0.31rem;
         user-select: none;
     -webkit-user-drag: none;
+    font-size: 1rem;
 }
 .button:hover{
     background-color: #00b84c;
 }
 .button img{
-    width:20px;
-    height: 20px;
+    width:1.04vw;
 }
 .a{
     text-decoration: none;
     border-radius: 8px;
+}
+@media (max-width: 1536px){
+    .button{
+        font-size: 1.25rem;
+        width: 20.625vw;
+        height: 5.625vh;
+    }
+    .button img{
+        width: 1.3vw;
+    }
+}
+@media (max-width: 1280px){
+    .button{
+        font-size: 0.66rem;
+    }
 }

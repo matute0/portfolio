@@ -1,29 +1,30 @@
 .card{
     background-color: var(--card);
-    width: 750px;
-    height: 600px;
-    border-radius: 8px;
-    padding-top:10px;
+    width: 39.06vw;
+    height: 65.2vh;
+    border-radius: 0.5rem;
+    padding-top:0.625rem;
+    gap:0.9375rem;
 }
 .card h1{
     margin: 0;
     font-family: 'Inter';
-    font-size: 22px;
+    font-size: 1.375rem;
     text-align: center;
 }
 .content{
     display: flex;
     flex-direction: column;
-    width: 750px;
-    height: 600px;
+    width: 39.06vw;
+    height: 65.2vh;
     text-align: left;
     font-family: 'Work Sans';
     font-weight: 500;
     color: var(--text);
     line-height: 1.6;
-    font-size: 22px;
-    padding-left: 10px;
-    gap: 15px;
+    font-size: 1.375rem;
+    padding-left: 0.625rem;
+    gap: 0.9375rem;
 }
 .download{
     display: flex;
@@ -39,10 +40,8 @@
     font-weight: 100;
     font-family: 'Inter';
     box-shadow: 0 8px 20px rgba(0, 0, 0, 0.5);
-    position:absolute;
-    bottom: 0;
-    left: 50%;
-    transform: translateX(75%);
+        margin-top: 10px;
+    transform: translateX(70%);
     margin-bottom: 10px;
     transition: 0.2s ease;
 }
@@ -60,33 +59,64 @@
 }
 .individual{
     background-color: var(--bg);
-    width: 730px;
-    border-radius: 8px;
-    height: 100px;
+    width: 38.02vw;
+    border-radius: 0.5rem;
+    height: 12vh;
     display: flex;
     align-items: center;
     justify-content: center;
-    gap: 25px;
+    gap: 1.56rem;
     border: 1px solid rgb(77, 75, 75);
     box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
 }
 
 .score h1{
-    font-size: 30px;
+    font-size: 1.874rem;
     font-family: 'Work Sans';
 }
 .score p{
     margin: 0;
     font-weight: 100;
     line-height: 1.6;
+    font-size: 1.375rem;
     font-family: 'Inter';
 }
 .content a{
     color: var(--text);
     text-decoration: none;
     transition: 0.2s ease;
-    width: 220px;
+    width: 11.46vw;
 }
 .content a:hover{
     color: var(--texthover);
+}
+
+@media (max-width: 1536px){
+    .card{
+        width: 70vw;
+        height: 100vh;
+    }
+    .content{
+        width: 70vw;
+        height: 100vh;
+        font-size: 1.72rem;
+        font-weight: 100;
+    }
+    .content a{
+        width: 18vw;
+        font-size: 1.72rem;
+    }
+    .individual{
+        width: 68.75vw;
+        height: 19vh;
+    }
+    .score h1{
+        font-size: 2.5rem;
+    }
+    .score p{
+        font-size: 1.72rem;
+    }
+    .download{
+        transform: translateX(115%);
+    }
 }
