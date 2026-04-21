@@ -1,14 +1,12 @@
 .card{
         justify-content: center;
     align-items: top;
-    border-radius: 8px;
-    width: 1500px;
-    height: 800px;
-        padding: 1px;
+    border-radius: 0;
+    width: 78.1vw;
 }
 
 .card h1{
-        margin-left: 30px;
+    margin-left: 1.875rem;
     color: var(--text);
     font-family: "Poppins", sans-serif;
 }
@@ -19,23 +17,23 @@
 .form{
     display:flex;
     justify-content: center;
-    height: 500px;
-    gap: 20px;
+    height: 55vh;
+    gap: 1.25rem;
 }
 .form form{
     display:flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    gap: 10px;
+    gap: 0.625rem;
 }
 .form input{
-    width: 370px;
+    width: 19.5vw;
   background-color: var(--input);
   border: 1px solid var(--borderInput); 
-  border-radius: 8px; 
-  padding: 12px 16px;
-  font-size: 15px;
+  border-radius: 0.5rem; 
+  padding: 0.75rem 1rem;
+  font-size: 0.94rem;
   color: var(--text);
   outline: none;
   transition: all 0.3s ease;
@@ -49,15 +47,15 @@
     background-color: var(--input);
     border: 1px solid var(--borderInput); 
     color: var(--text);
-    border-radius: 8px;
-    padding: 12px;
-    padding-left: 16px;
-    width: 378px;
-    height: 200px;
+    border-radius: 0.5rem;
+    padding: 0.75rem 1rem;
+    padding-left: 1rem;
+    width: 19.5vw;
+    height: 24vh;
     resize: none;
     outline: none;
     transition: all 0.3s ease;
-  font-size: 15px;
+  font-size: 0.94rem;
 }
 .form textarea::-webkit-scrollbar{
     width: 5px;
@@ -81,10 +79,10 @@ background: rgba(99, 99, 99, 0.5);
 .form button{
     background-color: #00C853;
     border: none;
-    width: 250px;
-    height: 30px;
-    border-radius: 8px;
-    font-size: 15px;
+    width: 13.1vw;
+    height: 4vh;
+    border-radius: 0.5rem;
+    font-size: 1rem;
     font-family: 'Inter';
     cursor: pointer;
     box-shadow: 0 0px 10px rgba(0, 0, 0, 0.5);
@@ -96,20 +94,20 @@ background: rgba(99, 99, 99, 0.5);
 
 .text{
     word-wrap: break-word;
-    font-size: 40px;
+    font-size: 2.5rem;
 }
 .right{
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 800px;
+    width: 42vw;
 }
 .inputgroup {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
     gap: 5px;
-    width: 400px;
+    width: 21vw;
 }
 .error {
     color: #ff6b6b;
@@ -133,7 +131,7 @@ background: rgba(99, 99, 99, 0.5);
     text-align: center;
     font-weight: bold;
     font-family: 'Inter', sans-serif;
-    width: 400px;
+    width: 21vw;
     box-sizing: border-box;
     transition: 0.2s ease;
 }
@@ -155,4 +153,41 @@ background: rgba(99, 99, 99, 0.5);
     cursor: not-allowed;
     box-shadow: none;
     transition: 0.2s ease;
+}
+@media (max-width: 1536px){
+    .card{
+        width: 72vw;
+    }
+    .form input{
+    width: 24.4vw;
+    }
+    .form textarea{
+        width: 24.4vw;
+    }
+    .text{
+    font-size: 3.2rem;
+
+    }
+    .card h2{
+        font-size: 1.9rem;
+    }
+    .form button{
+        width: 20vw;
+        height: 7vh;
+        font-size: 1.25rem;
+    }
+    .form form{
+        width: 40vw;
+        }
+    .right{
+        width: 40vw;
+        height: 65vh;
+    }
+    .statusmsg{
+        width: 24.4vw;
+    }
+    .inputgroup{
+        width: 26vw;
+        
+    }
 }
